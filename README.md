@@ -25,6 +25,8 @@ make && make modules
 ```
 env FOO;
 
+load_module modules/ngx_http_json_env_module.so;
+
 http {
     server {
       location /env {
